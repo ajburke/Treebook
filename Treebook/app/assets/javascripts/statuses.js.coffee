@@ -7,6 +7,6 @@ $ ->
 		$(this).toggleClass("hover");
 
 #$ ->
-#	$('.activeable').click(function (e) {
-#		$(this).toggleClass('active')
-#		})
+#	$('.activeable').on('click', ->
+#		$(this).toggleClass('active').siblings().removeClass('active');
+#		);
